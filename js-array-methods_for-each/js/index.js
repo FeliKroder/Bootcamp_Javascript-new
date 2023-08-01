@@ -32,4 +32,11 @@ function renderColorBox(color) {
   colorElement.style.background = color;
   document.body.append(colorElement);
 }
+
 colors.forEach(renderColorBox);
+
+// ANDERE SCHREIBWEISE:
+
+// colors.forEach((color) => {
+//   renderColorBox(color);
+// });
