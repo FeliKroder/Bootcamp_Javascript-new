@@ -15,4 +15,4 @@ root.append(squareElement);
 const pentagonElement = Pentagon();
 root.append(pentagonElement);
 
-root.append(circle, square, pentagon);
+// root.append(circle, square, pentagon);
