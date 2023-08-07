@@ -41,6 +41,18 @@ fetchDataAndRender();
 
 // --v-- your code below this line --v--
 
-function fetchDataAndRender() {
-  fetch(); // ?
+async function fetchDataAndRender() {
+  const url = ("https://swapi.dev/api/people")
+  fetch(url);
+  if (!url.ok) {
+    console.error("This did not work");
+  }
+  else {
+    console.log("Everything is working fine.")
+    const starWarsData = await url.json();
+    console.log(starWarsData);
+  }
+  catch{
+    console.error(error);
+  }
 }
