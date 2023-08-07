@@ -24,10 +24,10 @@ startRaceButton.addEventListener("click", async () => {
    **/
 
   // --v-- write your code here --v--
-  const animateRunner2 = await animateRunner(runner1);
-  const animateRunner3 = await animateRunner(runner2);
-  animateRunner2;
-  animateRunner3;
+  // const animateRunner2 = await animateRunner(runner1);
+  // const animateRunner3 = await animateRunner(runner2);
+  // animateRunner2;
+  // animateRunner3;
 
   await animateRunner(runner1);
   await animateRunner(runner2);
