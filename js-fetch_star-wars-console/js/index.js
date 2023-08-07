@@ -15,7 +15,7 @@ async function fetchData() {
       console.log("Data:", starWarsData);
       console.log("results:", starWarsData.results[2]);
       console.log("eyecolor:", starWarsData.results[2].eye_color);
-      console.log("eyecolor:", starWarsData.results[12]);
+      // console.log("eyecolor:", starWarsData.results[12]);
     }
   } catch (error) {
     console.error(error);
