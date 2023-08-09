@@ -24,10 +24,12 @@ console.log(course);
 
 const user = { name: "John", years: 30 };
 
-export const { name, years } = user;
-export const { isAdmin = false } = user;
+export const { name, years: age, isAdmin = false } = user;
+// ODER;
+// export const { name, years: age } = user;
+// export const { isAdmin = false } = user;
 console.log(user);
-console.log(isAdmin);
+console.log("user:", name, age, "isAdmin:", isAdmin);
 
 // EXERCISE 3
 // Extract the variables from the dog object and
@@ -41,7 +43,7 @@ const dog = {
 
 export const { name: dogName, breed: dogBreed, age: dogAge } = dog;
 console.log(dog);
-console.log(dogName);
+console.log("dog:", dogName, dogBreed, dogAge);
 
 // EXERCISE 4
 // Extract the 'lastName' property from the person object as "personLastName".
@@ -55,5 +57,4 @@ const person = {
 
 export const { lastName: personLastName, ...moreInformation } = person;
 console.log(person);
-console.log(personLastName);
-console.log(moreInformation);
+console.log("person:", personLastName, moreInformation);
